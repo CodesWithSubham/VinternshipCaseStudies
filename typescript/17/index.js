@@ -61,3 +61,6 @@ assignment.publish();
 // assignment.setDueDate(new Date("2026-03-20"), true); // Error: Cannot modify due date after publishing or if not instructor.
 console.log(assignment.getType());
 console.log("Due Date:", assignment.getDueDate());
+// Output:
+// Assignment
+// Due Date: 2026-03-10T00:00:00.000Z
