@@ -3,6 +3,7 @@ import Case02 from "./02/App";
 import Case03 from "./03/App";
 import Case04 from "./04/App";
 import Case05 from "./05/App";
+import Case06 from "./06/App";
 
 type CS = {
   path: string;
@@ -16,4 +17,9 @@ export const caseList: CS[] = [
   { path: "/casestudies/03/*", title: "CS03 - Medix Patient Portal", component: Case03 },
   { path: "/casestudies/04", title: "CS04 - TaskFlow Project Management", component: Case04 },
   { path: "/casestudies/05", title: "CS05 - Testing & Debugging React Apps", component: Case05 },
+  {
+    path: "/casestudies/06",
+    title: "CS06 - Zustand Slices & Modular Architecture",
+    component: Case06,
+  },
 ];
