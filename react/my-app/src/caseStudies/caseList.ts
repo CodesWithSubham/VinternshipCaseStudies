@@ -4,6 +4,7 @@ import Case03 from "./03/App";
 import Case04 from "./04/App";
 import Case05 from "./05/App";
 import Case06 from "./06/App";
+import Case07 from "./07/App";
 
 type CS = {
   path: string;
@@ -22,4 +23,5 @@ export const caseList: CS[] = [
     title: "CS06 - Zustand Slices & Modular Architecture",
     component: Case06,
   },
+  { path: "/casestudies/07", title: "CS07 - Advanced Zustand", component: Case07 },
 ];
