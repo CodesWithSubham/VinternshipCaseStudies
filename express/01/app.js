@@ -1,0 +1,28 @@
+const express = require("express");
+const app = express();
+const PORT = 3000;
+
+app.get("/", (req, res) => {
+  res.send("Welcome to Greenfield Community Center!");
+});
+
+app.get("/events", (req, res) => {
+  const events = [
+    "Yoga Class - Monday 7pm",
+    "Gardening Workshop - Wednesday 5pm",
+    "Book Club - Friday 6pm",
+  ];
+  res.json(events);
+});
+
+app.get("/contact", (req, res) => {
+  const contactInfo = {
+    email: "contact@greenfieldcc.org",
+    phone: "1234567890",
+  };
+  res.json(contactInfo);
+});
+
+app.listen(PORT, () => {
+  console.log(`Community Center server running at http://localhost:${PORT}`);
+});
