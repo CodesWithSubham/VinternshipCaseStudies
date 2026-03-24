@@ -22,3 +22,6 @@ console.log(customerContainer);
 // Order 1 is processed.
 // Order status: shipped
 // {
+//   value: { id: '123', name: 'John Doe' },
+//   time: 2026-02-09T12:33:24.187Z
+// }
