@@ -5,6 +5,8 @@ import Case04 from "./04/App";
 import Case05 from "./05/App";
 import Case06 from "./06/App";
 import Case07 from "./07/App";
+import Case08 from "./08/App";
+import Case09 from "./09/App";
 
 type CS = {
   path: string;
@@ -24,4 +26,6 @@ export const caseList: CS[] = [
     component: Case06,
   },
   { path: "/casestudies/07", title: "CS07 - Advanced Zustand", component: Case07 },
+  { path: "/casestudies/08", title: "CS08 - Memoization", component: Case08 },
+  { path: "/casestudies/09/*", title: "CS09 - Lazy Loading", component: Case09 },
 ];
