@@ -1,13 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: [['babel-plugin-react-compiler']],
+        plugins: [["babel-plugin-react-compiler"]],
       },
     }),
+    visualizer({
+      filename: "src/caseStudies/10/dist/stats.html",
+      open: true,
+      gzipSize: true,
+      brotliSize: true,
+    }),
   ],
-})
+});
